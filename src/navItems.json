@@ -1,0 +1,14 @@
+[
+    {
+        "name": "About",
+        "route": "/about"
+    },
+    {
+        "name": "Stonks 101",
+        "route": "/stonks-101"
+    },
+    {
+        "name": "Watch List",
+        "route": "/watch-list"
+    }
+]
