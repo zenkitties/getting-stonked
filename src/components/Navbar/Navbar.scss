@@ -1,5 +1,18 @@
 div .navbar-container {
-    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    width: auto;
     height: 75px;
     border-bottom: 1px solid rgba(248, 248, 248, 0.98);
+    -webkit-box-shadow: 1px 6px 10px 0px rgba(232,232,232,0.2);
+-moz-box-shadow: 1px 6px 10px 0px rgba(232,232,232,0.2);
+box-shadow: 1px 6px 10px 0px rgba(232,232,232,0.2);
+
+    ul {
+        display: flex;
+        flex-basis: 35%;
+        justify-content: space-evenly;
+        padding-left: 0;
+    }
 }
