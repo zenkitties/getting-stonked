@@ -1,0 +1,12 @@
+.logo {
+    display:flex;
+    margin-left: 10px;
+    flex-basis: 30%;
+    font-size: 2em !important;
+    align-items: center;
+
+    .stonkIcon {
+        margin-left: 10px;
+        filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+    }
+}

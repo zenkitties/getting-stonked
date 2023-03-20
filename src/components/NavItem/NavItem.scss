@@ -1,0 +1,10 @@
+li  {
+    display: inline-flex;
+    list-style-type: none;
+    font-weight: 500;
+    align-items: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
