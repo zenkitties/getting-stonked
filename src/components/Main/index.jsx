@@ -1,4 +1,5 @@
-import Navbar from '../Navbar'
+import Navbar from '../Navbar';
+import StonkSearch from '../StonkSearch';
 
 import './Main.scss'
 
@@ -6,7 +7,8 @@ const Main = () => {
     return (
         <>
             <Navbar />
-            <h1>Welcome to Getting Stonked!</h1>
+            <StonkSearch />
+            <h1>Hey there</h1>
         </>
     )
 }

@@ -1,22 +1,54 @@
-import Logo from '../Logo'
-import NavItem from '../NavItem'
+import { Link } from 'react-router-dom';
 
-import NAVITEMS from '../../navItems.json'
+import Main from '../Main';
+import About from '../About';
+import Stonks101 from '../Stonks101';
+import WatchList from '../WatchList';
 
-import './Navbar.scss'
+import Logo from '../Logo';
+
+import './Navbar.scss';
 
 const Navbar = () => {
-    const getNavItems = (navItem) => {
-        const {name, route} = navItem;
 
-        return <NavItem name={name} />
+    const navItems = [
+        {
+            name: 'Home',
+            path: '/',
+            element: <Main />
+        },
+        {
+            name: 'About',
+            path: '/about',
+            element: <About />
+        },
+        {
+            name: 'Stonks101',
+            path: '/stonks101',
+            element: <Stonks101 />
+        },
+        {
+            name: 'Watchlist',
+            path: '/watchlist',
+            element: <WatchList />
+        },
+    ]
+
+    const getLinks = (link) => {
+        const {name, path, element} = link
+
+        if (name !== 'Home') {
+            return (
+                <li className="nav-links"><Link to={path} element={element}>{name}</Link></li>
+            )
+        }
     }
 
     return (
         <div className="navbar-container">
             <Logo />
             <ul className="nav-items">
-                {NAVITEMS.map(getNavItems)}
+                {navItems.map(getLinks)}
             </ul>
         </div>
     )

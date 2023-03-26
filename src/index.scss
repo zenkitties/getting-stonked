@@ -1,8 +1,12 @@
+@import './variables.scss';
+
 body {
   margin: 0;
+  color: white;
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26) no-repeat fixed center;
 }
 
 code {
